@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ══════════════════════════════════════════════════════════
+     ESSAY TEMPLATE — to publish a new essay:
+     1. Duplicate this file, rename it (e.g. writing/why-i-build.html)
+     2. Replace the title below, the date/read-time, headline,
+        and the article body
+     3. Add an entry to the posts array in index.html with
+        url: "writing/why-i-build.html" and source: "Essay"
+     ══════════════════════════════════════════════════════════ -->
+<title>Sample Essay Title — J. Seth Hopkins</title>
+<meta name="description" content="An essay by J. Seth Hopkins.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23F5EFE4'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' font-weight='500' fill='%236E2B21' text-anchor='middle'%3E554%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5EFE4;--paper-deep:#EFE7D8;
+  --ink:#241F17;--ink-soft:#57503F;
+  --oxblood:#6E2B21;--bronze:#96742E;--rule:#D9CFBB;
+  --max:680px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:'Newsreader', Georgia, serif;
+  font-size:1.15rem;line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--oxblood);color:var(--paper)}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--oxblood);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+.label{
+  font-family:'Archivo', sans-serif;font-size:.7rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--bronze);
+}
+header{border-bottom:1px solid var(--rule)}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:1.1rem 0;gap:1rem}
+.masthead a{
+  font-family:'Archivo', sans-serif;font-size:.78rem;font-weight:500;
+  letter-spacing:.06em;text-decoration:none;color:var(--ink-soft);
+}
+.masthead a:hover{color:var(--oxblood)}
+.masthead .home{color:var(--oxblood);border-bottom:1px solid var(--oxblood);padding-bottom:1px}
+
+.essay-head{padding:clamp(3rem,7vw,5rem) 0 clamp(1.6rem,3vw,2.4rem);text-align:left}
+.essay-head .meta{display:flex;gap:1rem;align-items:center;margin-bottom:1.4rem}
+.essay-head .meta::after{content:"";height:1px;flex:0 0 3.2rem;background:var(--bronze)}
+h1{
+  font-family:'Fraunces', serif;font-weight:400;
+  font-size:clamp(2rem,5.4vw,3.2rem);line-height:1.12;letter-spacing:-0.015em;
+}
+h1 em{font-style:italic;color:var(--oxblood)}
+.byline{
+  margin-top:1.4rem;
+  font-family:'Archivo', sans-serif;font-size:.78rem;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);
+}
+
+article{padding:clamp(1rem,3vw,2rem) 0 clamp(3rem,6vw,4.5rem)}
+article > p{margin-top:1.35rem}
+article > p:first-of-type{margin-top:0}
+article > p:first-of-type::first-letter{
+  font-family:'Fraunces', serif;font-weight:500;
+  float:left;font-size:4.4rem;line-height:.8;
+  padding:.35rem .6rem 0 0;color:var(--oxblood);
+}
+article h2{
+  font-family:'Fraunces', serif;font-weight:500;
+  font-size:1.55rem;line-height:1.25;
+  margin-top:2.6rem;
+}
+article blockquote{
+  margin:2rem 0;padding:0 0 0 1.4rem;
+  border-left:2px solid var(--bronze);
+  font-style:italic;font-size:1.25rem;color:var(--ink-soft);
+}
+article a{color:var(--oxblood);text-decoration:none;border-bottom:1px solid rgba(110,43,33,.35)}
+article a:hover{border-color:var(--oxblood)}
+
+.essay-end{
+  display:flex;align-items:center;gap:1rem;margin-top:3rem;
+}
+.essay-end::before,.essay-end::after{content:"";height:1px;flex:1;background:var(--rule)}
+.essay-end span{
+  font-family:'Fraunces', serif;color:var(--oxblood);font-size:1.1rem;
+}
+
+.essay-foot{
+  border-top:1px solid var(--rule);padding:2rem 0 1rem;
+}
+.essay-foot p{color:var(--ink-soft);font-size:1rem;font-style:italic}
+.essay-foot a{color:var(--oxblood);text-decoration:none;border-bottom:1px solid rgba(110,43,33,.35)}
+.essay-foot a:hover{border-color:var(--oxblood)}
+
+footer{border-top:1px solid var(--rule);padding:1.6rem 0 2.2rem;margin-top:2rem}
+.foot{
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-family:'Archivo', sans-serif;font-size:.78rem;color:var(--ink-soft);letter-spacing:.04em;
+}
+.foot a{text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:1px}
+.foot a:hover{color:var(--oxblood);border-color:var(--oxblood)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap masthead">
+    <a href="../index.html">&larr; jsethhopkins.com</a>
+    <a class="home" href="mailto:hello@jsethhopkins.com">hello@jsethhopkins.com</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="essay-head">
+    <div class="meta">
+      <span class="label">Essay · April 2026 · 5 min read</span>
+    </div>
+    <h1>Sample essay title with an <em>italic accent</em> if you want one</h1>
+    <p class="byline">By J. Seth Hopkins</p>
+  </div>
+
+  <article>
+    <p>Your opening paragraph goes here. The first letter gets a drop cap automatically, so start strong. This template gives you everything the main site has — the same paper, the same type, the same oxblood — set at a comfortable reading measure of about seventy characters per line.</p>
+
+    <p>Regular paragraphs just need <code>&lt;p&gt;</code> tags. Write as many as the piece needs.</p>
+
+    <h2>Section headings look like this</h2>
+
+    <p>Use them to break up longer pieces. Links inside the text <a href="https://jsethhopkins.com">look like this</a> and match the rest of the site.</p>
+
+    <blockquote>Pull quotes get a bronze rule and italics — good for the one line you want people to remember.</blockquote>
+
+    <p>Close the piece however feels right. The end mark below signals you're done, editorial-style.</p>
+
+    <div class="essay-end"><span>554</span></div>
+  </article>
+
+  <div class="essay-foot">
+    <p>Views are my own. If this sparked something, <a href="mailto:hello@jsethhopkins.com">I read every email</a>.</p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>&copy; 2026 J. Seth Hopkins · Chicago</span>
+    <span class="links"><a href="../index.html">Home</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

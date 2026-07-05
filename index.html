@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J. Seth Hopkins — Advisor & Builder</title>
+<meta name="description" content="Seth Hopkins is a senior finance and operations advisor to CEOs, CFOs, and boards, and co-founder of the 554 companies — Ventures, Properties, and Studios. Based in Chicago.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23F5EFE4'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' font-weight='500' fill='%236E2B21' text-anchor='middle'%3E554%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jsethhopkins.com">
+<meta property="og:title" content="J. Seth Hopkins — Advisor & Builder">
+<meta property="og:description" content="Senior finance and operations advisor to CEOs, CFOs, and boards. Co-founder of the 554 companies. Based in Chicago.">
+<meta property="og:image" content="https://jsethhopkins.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5EFE4;
+  --paper-deep:#EFE7D8;
+  --ink:#241F17;
+  --ink-soft:#57503F;
+  --oxblood:#6E2B21;
+  --bronze:#96742E;
+  --rule:#D9CFBB;
+  --max:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Newsreader', Georgia, serif;
+  font-size:1.125rem;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--oxblood);color:var(--paper)}
+a{color:inherit}
+a:focus-visible, button:focus-visible{outline:2px solid var(--oxblood);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+.label{
+  font-family:'Archivo', sans-serif;
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+}
+
+/* ---------- masthead ---------- */
+header{
+  border-bottom:1px solid var(--rule);
+}
+.masthead{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:1.1rem 0;
+  gap:1rem;
+}
+.masthead .name{
+  font-family:'Fraunces', serif;
+  font-weight:600;font-size:1.05rem;letter-spacing:.01em;
+}
+.masthead a{text-decoration:none}
+.masthead .contact{
+  font-family:'Archivo', sans-serif;font-size:.78rem;font-weight:500;
+  letter-spacing:.06em;color:var(--oxblood);
+  border-bottom:1px solid var(--oxblood);
+  padding-bottom:1px;
+}
+.masthead .contact:hover{color:var(--ink);border-color:var(--ink)}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(3.5rem,9vw,7rem) 0 clamp(3rem,7vw,5.5rem)}
+.hero-grid{
+  display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);
+  gap:clamp(2rem,6vw,5rem);align-items:center;
+}
+.portrait{position:relative;max-width:360px;justify-self:end}
+.portrait img{
+  display:block;width:100%;height:auto;
+  border:1px solid var(--rule);
+  filter:sepia(.14) saturate(.92);
+}
+.portrait::after{
+  content:"";position:absolute;inset:0;
+  background:var(--oxblood);opacity:.05;pointer-events:none;
+  mix-blend-mode:multiply;
+}
+.portrait figcaption{
+  margin-top:.7rem;
+  font-family:'Archivo', sans-serif;font-size:.7rem;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
+}
+@media (max-width:760px){
+  .hero-grid{grid-template-columns:1fr}
+  .portrait{justify-self:start;max-width:280px;order:-1}
+}
+.hero .label{margin-bottom:1.4rem;display:flex;align-items:center;gap:.9rem}
+.hero .label::after{content:"";height:1px;width:3.2rem;background:var(--bronze)}
+h1{
+  font-family:'Fraunces', serif;
+  font-optical-sizing:auto;
+  font-weight:400;
+  font-size:clamp(2.4rem,6.2vw,4.4rem);
+  line-height:1.08;
+  letter-spacing:-0.015em;
+  max-width:19ch;
+}
+h1 em{
+  font-style:italic;font-weight:400;color:var(--oxblood);
+}
+.hero .dek{
+  margin-top:2rem;
+  max-width:52ch;
+  font-size:clamp(1.15rem,2vw,1.3rem);
+  color:var(--ink-soft);
+  line-height:1.6;
+}
+.hero .dek strong{color:var(--ink);font-weight:500}
+
+.mast-links{display:flex;gap:1.4rem;align-items:baseline}
+.masthead .loc{
+  font-family:'Archivo', sans-serif;font-weight:400;font-size:.75rem;
+  color:var(--ink-soft);letter-spacing:.08em;
+}
+
+/* ---------- consulting ---------- */
+.section{border-top:1px solid var(--rule);padding:clamp(3rem,7vw,5rem) 0}
+.section-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.1fr);
+  gap:clamp(2rem,5vw,4.5rem);
+}
+.section-head h2{
+  font-family:'Fraunces', serif;font-weight:500;
+  font-size:clamp(1.5rem,2.6vw,1.9rem);line-height:1.2;
+  margin-top:.9rem;max-width:14ch;
+}
+.lede{font-size:1.15rem}
+.lede + p{margin-top:1.1rem}
+.practice-list{
+  margin-top:2rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:var(--rule);border:1px solid var(--rule);
+}
+.practice-list div{
+  background:var(--paper);
+  padding:1.1rem 1.2rem;
+  font-family:'Archivo', sans-serif;font-size:.85rem;font-weight:500;
+  letter-spacing:.02em;color:var(--ink-soft);
+}
+.practice-list div span{
+  display:block;color:var(--bronze);font-size:.68rem;font-weight:600;
+  letter-spacing:.16em;margin-bottom:.3rem;
+}
+
+.credentials{
+  margin-top:1.6rem;
+  font-family:'Archivo', sans-serif;font-size:.78rem;font-weight:500;
+  letter-spacing:.05em;color:var(--bronze);
+}
+.firm-note{
+  margin-top:1.4rem;padding:1rem 1.2rem;
+  border-left:2px solid var(--bronze);
+  font-size:.98rem;font-style:italic;color:var(--ink-soft);
+  background:var(--paper-deep);
+}
+.firm-note a{color:var(--oxblood);text-decoration:none;border-bottom:1px solid var(--oxblood)}
+.firm-note a:hover{color:var(--ink);border-color:var(--ink)}
+.company .right a{color:var(--oxblood);text-decoration:none;border-bottom:1px solid var(--oxblood)}
+.company .right a:hover{color:var(--ink);border-color:var(--ink)}
+.cta .note a{color:var(--oxblood);text-decoration:none;border-bottom:1px solid rgba(110,43,33,.4)}
+.cta .note a:hover{border-color:var(--oxblood)}
+
+/* ---------- 554 ---------- */
+.fivefiftyfour{background:var(--paper-deep)}
+.big554{
+  font-family:'Fraunces', serif;font-weight:300;
+  font-size:clamp(5rem,14vw,10.5rem);
+  line-height:.9;letter-spacing:-0.03em;
+  color:var(--oxblood);
+  margin:-.05em 0 .35em -0.04em;
+}
+.fivefiftyfour .intro{max-width:56ch;color:var(--ink-soft);font-size:1.15rem}
+.companies{margin-top:clamp(2.5rem,5vw,4rem);border-top:1px solid var(--rule)}
+.company{
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.8fr);
+  gap:clamp(1.5rem,4vw,4rem);
+  padding:clamp(1.8rem,4vw,2.6rem) 0;
+  border-bottom:1px solid var(--rule);
+}
+.company h3{
+  font-family:'Fraunces', serif;font-weight:500;
+  font-size:clamp(1.35rem,2.4vw,1.7rem);line-height:1.15;
+}
+.company h3 span{color:var(--oxblood)}
+.company .tag{margin-top:.45rem}
+.company p{color:var(--ink-soft)}
+.company p b{color:var(--ink);font-weight:500}
+
+/* ---------- writing ---------- */
+.writing .section-head p.blurb{
+  margin-top:1rem;color:var(--ink-soft);font-size:1rem;max-width:26ch;
+}
+.post-list{border-top:1px solid var(--rule)}
+.post{
+  display:grid;
+  grid-template-columns:7.5rem minmax(0,1fr) auto;
+  gap:clamp(1rem,3vw,2.5rem);
+  align-items:baseline;
+  padding:1.4rem 0;
+  border-bottom:1px solid var(--rule);
+  text-decoration:none;
+}
+.post .date{
+  font-family:'Archivo', sans-serif;font-size:.72rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--bronze);
+  white-space:nowrap;
+}
+.post .src{
+  display:inline-block;margin-left:.7rem;
+  font-family:'Archivo', sans-serif;font-size:.62rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--oxblood);border:1px solid rgba(110,43,33,.35);
+  padding:.1rem .45rem;border-radius:2px;vertical-align:1px;
+}
+.post .title{
+  font-family:'Fraunces', serif;font-weight:500;
+  font-size:clamp(1.1rem,2vw,1.35rem);line-height:1.3;
+  transition:color .2s ease;
+}
+.post .excerpt{
+  display:block;font-family:'Newsreader', serif;font-weight:400;
+  font-size:.98rem;color:var(--ink-soft);margin-top:.25rem;
+}
+.post .go{
+  font-family:'Fraunces', serif;font-size:1.2rem;color:var(--oxblood);
+  transition:transform .2s ease;
+}
+.post:hover .title{color:var(--oxblood)}
+.post:hover .go{transform:translateX(5px)}
+.post-empty{
+  padding:2rem 0;color:var(--ink-soft);font-style:italic;
+  border-bottom:1px solid var(--rule);
+}
+.all-posts{
+  display:inline-block;margin-top:1.6rem;
+  font-family:'Archivo', sans-serif;font-size:.78rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--oxblood);text-decoration:none;
+  border-bottom:1px solid var(--oxblood);padding-bottom:2px;
+}
+.all-posts:hover{color:var(--ink);border-color:var(--ink)}
+@media (max-width:760px){
+  .post{grid-template-columns:1fr;gap:.35rem}
+  .post .go{display:none}
+}
+
+/* ---------- CTA ---------- */
+.cta{padding:clamp(4rem,9vw,6.5rem) 0;text-align:left}
+.cta h2{
+  font-family:'Fraunces', serif;font-weight:400;
+  font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.15;
+  max-width:22ch;
+}
+.cta h2 em{font-style:italic;color:var(--oxblood)}
+.email-line{
+  margin-top:2.4rem;display:inline-flex;align-items:center;gap:1rem;
+  text-decoration:none;
+}
+.email-line .address{
+  font-family:'Fraunces', serif;font-weight:500;
+  font-size:clamp(1.25rem,3vw,1.8rem);
+  border-bottom:2px solid var(--oxblood);
+  padding-bottom:.15em;
+  transition:color .2s ease;
+}
+.email-line .arrow{
+  font-family:'Fraunces', serif;font-size:clamp(1.25rem,3vw,1.8rem);
+  color:var(--oxblood);transition:transform .2s ease;
+}
+.email-line:hover .address{color:var(--oxblood)}
+.email-line:hover .arrow{transform:translateX(6px)}
+.cta .note{margin-top:1.1rem;color:var(--ink-soft);font-size:1rem;font-style:italic}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--rule);padding:1.6rem 0 2.2rem}
+.foot{
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-family:'Archivo', sans-serif;font-size:.78rem;color:var(--ink-soft);
+  letter-spacing:.04em;
+}
+.foot a{text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:1px}
+.foot a:hover{color:var(--oxblood);border-color:var(--oxblood)}
+.foot .links{display:flex;gap:1.4rem}
+
+/* ---------- responsive ---------- */
+@media (max-width:760px){
+  .section-grid,.company{grid-template-columns:1fr}
+  .practice-list{grid-template-columns:1fr}
+  .company .right{margin-top:.2rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap masthead">
+    <span class="name">J. Seth Hopkins <span class="loc">· Chicago</span></span>
+    <span class="mast-links">
+      <a class="contact" href="resume.html">Résumé</a>
+      <a class="contact" href="mailto:hello@jsethhopkins.com">hello@jsethhopkins.com</a>
+    </span>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="label">Advisor &amp; Builder — Chicago</p>
+        <h1>I help executives run their organizations. Then I go run <em>mine</em>.</h1>
+        <p class="dek">I'm Seth Hopkins. For more than <strong>twenty years</strong> I've guided CEOs, CFOs, and boards — at organizations from <strong>$10 million to $7 billion</strong> in revenue — through financial transformation and operational scale. Mine are the <strong>554 companies</strong>: a portfolio spanning real estate, software, and games. The advisor's seat and the operator's seat — each makes me better in the other.</p>
+      </div>
+      <figure class="portrait">
+        <img src="seth-hopkins.jpg" alt="Portrait of J. Seth Hopkins" width="750" height="1000">
+        <figcaption>J. Seth Hopkins · Chicago</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap section-grid">
+      <div class="section-head">
+        <p class="label">The Practice</p>
+        <h2>Consulting at Forvis Mazars</h2>
+      </div>
+      <div>
+        <p class="lede">As Director of Consulting at Forvis Mazars, I work directly with C&#8209;suite executives and boards on the problems that don't fit neatly inside one department — the ones that touch people, money, and technology all at once.</p>
+        <p>That has meant designing forecasting models and board-level reporting frameworks, advising audit committees on governance and risk, launching the firm's Chicago nonprofit advisory practice, and stepping in as interim CFO and COO for organizations navigating transition. The through-line is operational clarity: helping leadership see how their organization actually runs, then making deliberate decisions about how it should.</p>
+        <div class="practice-list">
+          <div><span>01</span>Management consulting</div>
+          <div><span>02</span>Accounting &amp; finance operations</div>
+          <div><span>03</span>Succession planning</div>
+          <div><span>04</span>Technology &amp; AI operations</div>
+        </div>
+        <p class="credentials">MBA in Finance, UNC Kenan&#8209;Flagler &nbsp;·&nbsp; BS in Business, Northwestern University</p>
+        <p class="firm-note">This is my personal site and the views here are my own. For consulting engagements, please reach me through <a href="https://www.forvismazars.com">forvismazars.com</a> or <a href="mailto:seth.hopkins@us.forvismazars.com">seth.hopkins@us.forvismazars.com</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fivefiftyfour">
+    <div class="wrap">
+      <p class="label">The Portfolio</p>
+      <div class="big554" aria-hidden="true">554</div>
+      <p class="intro">One number, one umbrella. <b>554 Ventures</b> is the parent company and incubator — everything below is built, owned, and operated under it. What I learn advising executives, I put to work here as an operator; what breaks here, I bring back to the advisory table.</p>
+
+      <div class="companies">
+        <article class="company">
+          <div>
+            <h3><span>554</span> Ventures</h3>
+            <p class="label tag">The umbrella · Incubator</p>
+          </div>
+          <p class="right">The parent company and startup incubator where products are built in-house — including <a href="https://workarc.ai"><b>Workarc</b></a> and the rental management platform that runs 554 Properties. Software born from problems we actually have. <a href="https://554ventures.com"><b>554ventures.com</b></a></p>
+        </article>
+        <article class="company">
+          <div>
+            <h3><span>554</span> Properties</h3>
+            <p class="label tag">Real estate investment</p>
+          </div>
+          <p class="right">Owns and operates <b>multi-unit residential buildings</b> — long-term holdings run with the same operational discipline I bring to client work, managed on our own platform at <a href="https://app.554properties.com"><b>554properties.com</b></a>.</p>
+        </article>
+        <article class="company">
+          <div>
+            <h3><span>554</span> Studios</h3>
+            <p class="label tag">Game production</p>
+          </div>
+          <p class="right">Produces games for <b>app, web, and Steam</b> — including <b>Journey to the West</b> and <b>Hearthborne</b>. The craft side of the portfolio. <i>Links coming soon.</i></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section writing">
+    <div class="wrap section-grid">
+      <div class="section-head">
+        <p class="label">Writing</p>
+        <h2>Thinking in public</h2>
+        <p class="blurb">Posts, articles, and thought leadership — from LinkedIn, Forvis Mazars, and here.</p>
+      </div>
+      <div>
+        <div class="post-list" id="postList"></div>
+        <a class="all-posts" href="https://www.linkedin.com/in/jsethhopkins/" rel="me">Follow along on LinkedIn &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta wrap">
+    <p class="label">Get in touch</p>
+    <h2>An idea, a property, a game, a question — or just to <em>say hello</em>.</h2>
+    <a class="email-line" href="mailto:hello@jsethhopkins.com">
+      <span class="address">hello@jsethhopkins.com</span>
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <p class="note">One inbox. I read everything. (Consulting engagements go through <a href="https://www.forvismazars.com">Forvis Mazars</a>.)</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>&copy; 2026 J. Seth Hopkins · Chicago · Views are my own.</span>
+    <span class="links">
+      <a href="resume.html">Résumé</a>
+      <a href="https://www.linkedin.com/in/jsethhopkins/" rel="me">LinkedIn</a>
+      <a href="https://jsethhopkins.com" rel="me">jsethhopkins.com</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   YOUR WRITING — edit this list and nothing else. Newest first.
+
+   Each entry has five fields:
+     date:    "Jun 2026"  (what displays; any short text works)
+     source:  "LinkedIn" | "Forvis Mazars" | "Essay"  (the badge)
+     title:   the headline shown on the site
+     excerpt: one line so visitors know whether to click
+     url:     where it lives —
+       · LinkedIn post:        ⋯ menu → "Copy link to post"
+       · Forvis Mazars piece:  paste the article's URL
+       · Personal essay:       host the page on this site and
+                               use a relative link like
+                               "writing/my-essay.html"
+   ============================================================ */
+const posts = [
+  {
+    date: "Jun 2026",
+    source: "LinkedIn",
+    title: "Sample LinkedIn post — replace me",
+    excerpt: "One-line hook or first sentence of the post goes here.",
+    url: "https://www.linkedin.com/in/jsethhopkins/"
+  },
+  {
+    date: "May 2026",
+    source: "Forvis Mazars",
+    title: "Sample firm article — replace me",
+    excerpt: "Thought leadership published through the firm; links to forvismazars.com.",
+    url: "https://www.forvismazars.com"
+  },
+  {
+    date: "Apr 2026",
+    source: "Essay",
+    title: "Sample personal essay — replace me",
+    excerpt: "Longer-form writing hosted right here on this site.",
+    url: "writing/sample-essay.html"
+  }
+];
+
+const list = document.getElementById("postList");
+if (posts.length === 0) {
+  list.innerHTML = '<p class="post-empty">New writing coming soon — follow on LinkedIn in the meantime.</p>';
+} else {
+  list.innerHTML = posts.map(p => `
+    <a class="post" href="${p.url}" ${p.url.startsWith("http") ? 'target="_blank" rel="noopener"' : ''}>
+      <span class="date">${p.date}</span>
+      <span>
+        <span class="title">${p.title}</span>${p.source ? `<span class="src">${p.source}</span>` : ''}
+        <span class="excerpt">${p.excerpt}</span>
+      </span>
+      <span class="go" aria-hidden="true">&rarr;</span>
+    </a>`).join("");
+}
+</script>
+</body>
+</html>
